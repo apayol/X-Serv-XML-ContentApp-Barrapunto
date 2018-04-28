@@ -114,7 +114,7 @@ def pagina(request, name):
                 respuesta += "<br><br>Nombre: " + name
                 respuesta += FORMULARIO_PAGE
                 respuesta += "<br>La lista de noticias de barrapunto es:</br>"
-            #    barrapunto(request) # muestro últimas noticias
+                barrapunto(request) # muestro últimas noticias
             else:
                 respuesta = "La página no existe. Haz log in para crearla"
             return HttpResponseNotFound(logged + respuesta + barrapunto_rss)
